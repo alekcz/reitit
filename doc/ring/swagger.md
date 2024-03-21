@@ -70,7 +70,7 @@ Webjars also hosts a [version](https://github.com/webjars/swagger-ui) of the swa
 
 **NOTE:** If you use swagger-ui 3.x, you need to include `:responses` for Swagger-UI
 to display the response when trying out endpoints. You can define `:responses {200 {:schema s/Any}}`
-at the top-level to show responses for all endpoints.
+at the top-level to show responses for all endpoints (or `:responses {200  [:any]}` for [malli](https://cljdoc.org/d/metosin/reitit-malli/) ).
 
 ## Examples
 
